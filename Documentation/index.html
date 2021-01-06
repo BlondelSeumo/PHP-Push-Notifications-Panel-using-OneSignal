@@ -1,0 +1,56 @@
+<link href="./style.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="./script.js"></script>
+<body>
+<div class="code-editor">	
+			<span class="control"></span>
+			<span class="control"></span>
+			<span class="control"></span>
+			
+			<pre class="line-numbers"> <h1>1. Config.php Setup</h1>
+				<code class="language-css">
+### Firstly change your "config-sample.php" to "config.php" ###
+
+$app_id = 'your_onesignal_api_key';
+$auth_key = 'your_onesignal_rest_api_key';
+$admin = 'admin';
+$passw = 'admin';
+$api_logo = 'https://pbs.twimg.com/profile_images/477198832103481344/tOi2JPFE_400x400.png';
+</code></pre>
+</div>
+
+<div class="code-editor">	
+			<span class="control"></span>
+			<span class="control"></span>
+			<span class="control"></span>
+			
+			<pre class="line-numbers"> <h1>2. Configure OneSignal settings</h1>
+				<code class="language-css">
+1.1 Enter Site URL
+Most users just enter their base site URL for this field (e.g. example.com). However, if your site meets one of the below cases, please follow these recommendations:
+
+My site uses a subfolder
+If your site uses a subfolder, like example.com/blog (where blog is the subfolder), please only enter example.com.
+
+My site uses both www and non-www links
+For sites that are accessible from both www & non-www links, such as example.com AND www.example.com, please only enter the one that you wish to send push notifications from.
+
+RECOMMENDED - redirect traffic from one to the other (e.g. users that visit example.com are redirected to www.example.com), so that all your traffic only goes to one.
+			</code></pre><img src="https://files.readme.io/25f58d2-Step1.png" width="100%" />	
+</div>
+
+
+<div class="code-editor">	
+			<span class="control"></span>
+			<span class="control"></span>
+			<span class="control"></span>
+			
+			<pre class="line-numbers"> <h1>3. Get Key &amp; Rest Api</h1>
+				<code class="language-css">
+### After you get key and rest api change with yours in  config.php
+
+$app_id = 'your_onesignal_api_key';
+$auth_key = 'your_onesignal_rest_api_key';
+				</code></pre><img src="https://image.prntscr.com/image/f37fc30a5cc64c44b1b8d390eafe4da2.png" width="100%" />
+</div>
+</body>
